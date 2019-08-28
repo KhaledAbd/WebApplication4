@@ -3,7 +3,6 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
 using WebApplication4.Models;
 
@@ -58,11 +57,13 @@ namespace WebApplication4
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+         /*   app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "363951824013 - g61tjruovqfpsa4hd05ll5bam44t0s9c.apps.googleusercontent.com",
+                ClientSecret = "ijUGGE90yhS8QpWPCveHOIDK"
+            });
+
+        */
         }
     }
 }

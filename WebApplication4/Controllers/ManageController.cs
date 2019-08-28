@@ -329,7 +329,6 @@ namespace WebApplication4.Controllers
                 _userManager.Dispose();
                 _userManager = null;
             }
-
             base.Dispose(disposing);
         }
 
