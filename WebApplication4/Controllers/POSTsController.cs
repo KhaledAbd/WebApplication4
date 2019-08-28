@@ -10,6 +10,7 @@ using WebApplication4.Models;
 
 namespace WebApplication4.Controllers
 {
+    [Authorize]
     public class POSTsController : Controller
     {
         private Blog_MedicalEntities2 db = new Blog_MedicalEntities2();
@@ -82,6 +83,7 @@ namespace WebApplication4.Controllers
         {
             if (ModelState.IsValid)
             {
+                pOST.created_at =TimeSpan.Parse(DateTime.Now.ToString());
                 db.Entry(pOST).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
